@@ -110,6 +110,16 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Display options
+    |--------------------------------------------------------------------------
+    */
+
+   'posts_per_page' => env('POSTS_PER_PAGE', 10),
+   'projects_per_page' => env('PROJECTS_PER_PAGE', 10),
+   'users_per_page' => env('USERS_PER_PAGE', 10),
+
+    /*
+    |--------------------------------------------------------------------------
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
     |
@@ -158,6 +168,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\TelescopeServiceProvider::class,
         App\Providers\NovaServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 

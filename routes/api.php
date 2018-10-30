@@ -1,18 +1,8 @@
 <?php
 
-use Illuminate\Http\Request;
+// API is read-only, therefore we only use index and show methods
+Route::resource('users', 'UserController')->only(['index', 'show']);
+Route::resource('posts', 'ProjectController')->only(['index', 'show']);
+Route::resource('projects', 'ProjectController')->only(['index', 'show']);
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
-
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// todo: why can't I use only() on Route::resources (plural)?
