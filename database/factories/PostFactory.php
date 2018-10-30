@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,16 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Post::class, function (Faker $faker) {
+    $title = $faker->sentence();
+    $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $title)));
     return [
-        'name' => $faker->name,
-        'email' => 'user@example.com',
-        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
-        'remember_token' => str_random(10),
+        'user_id' => 1,
+        'title' => $title,
+        'slug' => $slug,
+        'content' => $faker->paragraphs(3, true),
+        'excerpt' => $faker->paragraph(true),
+        'published' => true,
+        'published_at' => Carbon::now()
     ];
 });
