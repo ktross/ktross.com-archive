@@ -1,0 +1,118 @@
+@keyframes slider-first {
+    0% {
+        transform: scale(0.8) translateX(-70%);
+    }
+    100% {
+        transform: scale(1) translateX(0%);
+    }
+}
+
+.entries {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.browser {
+    background: #fff;
+    width:900px;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+.browser:nth-child(1) {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    transform: scale(0.8) translateX(-70%)
+}
+
+.browser:nth-child(2) {
+    transform: scale(1);
+    margin: auto;
+}
+
+.browser:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: scale(0.8) translateX(70%);
+}
+
+.browser .toolbar {
+    width: 100%;
+    height: 65px;
+    background: #dedede;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.browser .toolbar .buttons .fas, .browser .toolbar .buttons .fab {
+    margin-right: 15px;
+}
+
+.browser .toolbar .buttons .os {
+    margin-bottom:-5px;
+}
+
+.browser .toolbar .buttons .os .fas, .browser .toolbar .buttons .os .fab {
+    font-size: 12px;
+    margin-right:8px;
+}
+
+.browser .toolbar .buttons .os .close {
+    color: #ff605b;
+}
+.browser .toolbar .buttons .os .minimize {
+    color: #febf34;
+}
+.browser .toolbar .buttons .os .maximize {
+    color: #00cc49;
+}
+
+.browser .toolbar .fas, .browser .toolbar .fab {
+    line-height: 29px;
+    color: #8d8d8f;
+}
+
+.browser .toolbar .tabs {
+    flex: 1;
+}
+
+.browser .toolbar .tabs .search {
+    background: #fff;
+    color: #999;
+    width: 100%;
+    height: 29px;
+    line-height: 29px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.browser .toolbar .menu {
+    margin-left:10px;
+}
+
+.browser .main {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    /* background-image: url("/images/youngstown_full.png");
+    background-size: 900px auto; */
+    background-position: top center;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.browser .main img {
+    /* Center image horizontally, even when larger than viewport */
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
