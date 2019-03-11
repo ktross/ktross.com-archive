@@ -8,7 +8,8 @@ import routes from './routes'
 import VueRouter from 'vue-router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-import WebBrowser from './components/WebBrowser'
+import upperFirst from 'lodash/upperFirst'
+import camelCase from 'lodash/camelCase'
 
 /**
  * Axios (HTTP Requests)
@@ -33,8 +34,17 @@ const router = new VueRouter({
 /**
  * Register Components
  */
-Vue.component('web-browser', WebBrowser)
- 
+const requireComponent = require.context('./components',true, /\w+\.(vue|js)$/)
+requireComponent.keys().forEach(fileName => {
+    const componentConfig = requireComponent(fileName)
+    const componentName = upperFirst(
+        camelCase(
+            fileName.split('/').pop().replace(/\.\w+$/, '')
+        )
+    )
+    Vue.component(componentName, componentConfig.default || componentConfig)
+})
+
 /**
  * Initialize Vue application
  */
