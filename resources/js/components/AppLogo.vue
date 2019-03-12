@@ -1,10 +1,18 @@
 <template>
-    <object type="image/svg+xml" :data="logoFile">Logo Fallback.</object>
+    <object type="image/svg+xml" :data="logoFile" :height="height">Logo Fallback.</object>
 </template>
 
 <script>
 export default {
     props: {
+        height: {
+            type: String,
+            required: false
+        },
+        width: {
+            type: String,
+            required: false
+        },
         dark: {
             type: Boolean,
             required: false

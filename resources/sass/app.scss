@@ -4,10 +4,12 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 // @import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css');
 
-// Variables
+// Variables (incl Bootstrap overrides)
 @import 'variables';
 
-// Reset
+// Bootstrap (reset/grid only)
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
 // Typography
 @import 'typography';

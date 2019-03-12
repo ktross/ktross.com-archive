@@ -8,5 +8,5 @@ storiesOf('Branding|Logo', module)
         template: '<AppLogo dark></AppLogo>'
     }))
     .add('Sizes', () => ({
-        template: '<AppLogo></AppLogo>'
+        template: '<div><AppLogo height="300"></AppLogo><br><AppLogo height="150"></AppLogo><br><AppLogo height="40"></AppLogo></div>'
     }))
