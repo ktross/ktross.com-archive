@@ -1,5 +1,5 @@
 <template>
-    <object type="image/svg+xml" :data="logoFile" :height="height">Logo Fallback.</object>
+    <object type="image/svg+xml" :data="logoFile" :height="height" :width="width">Logo Fallback.</object>
 </template>
 
 <script>

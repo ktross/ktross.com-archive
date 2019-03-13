@@ -1,7 +1,11 @@
 <template>
     <div>
-        <div class="row">
-            <h1>Home Page</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1>Home Page</h1>
+                </div>
+            </div>
         </div>
     </div>
 </template>

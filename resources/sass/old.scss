@@ -7,6 +7,10 @@ body {
     color:#333;
 }
 
+#app {
+    overflow-x: hidden;
+}
+
 .text-center {
     text-align: center;
 }
@@ -31,19 +35,13 @@ a:hover, router-link:hover {
 }
 
 header {
-    height: 150px;
     background: #fff;
     position:relative;
 }
 
-header .row {
-    align-items: center;
-    justify-content: space-between;
-}
-
-header nav.brand {
-    text-align:right;
-}
+header nav.brand { text-align: left; }
+header nav.main { text-align:center; }
+header nav.external { text-align: right; }
 
 header nav.brand a, header nav.brand router-link {
     color:#333;
@@ -75,16 +73,16 @@ header nav.brand span {
     font-size:12px;
 }
 
-header:after {
-    content: "";
-    background-color: #fff;
-    width: 100%;
-    height: 138px;
-    position: absolute;
-    bottom: -68px;
-    right: 0px;
-    transform: skewY(-4deg);
-}
+// header:after {
+//     content: "";
+//     background-color: #fff;
+//     width: 100%;
+//     height: 145px;
+//     position: absolute;
+//     bottom: -80px;
+//     right: 0px;
+//     transform: skewY(-4deg);
+// }
 
 main {
     width: 100%;
@@ -92,29 +90,22 @@ main {
     position:relative;
 }
 
-main:after {
-    content: "";
-    background-color: #f6f9fc;
-    width:100%;
-    height:138px;
-    position:absolute;
-    bottom:-68px;
-    right:0px;
-    transform: skewY(-4deg);
-}
+// main:after {
+//     content: "";
+//     background-color: #f6f9fc;
+//     width:100%;
+//     height:138px;
+//     position:absolute;
+//     bottom:-68px;
+//     right:0px;
+//     transform: skewY(-4deg);
+// }
 
 footer {
     width: 100%;
-    height: 250px;
     background: #e74430;
     color: #fff;
     font-size:16px;
-}
-
-footer .row {
-    align-items: flex-end;
-    padding-bottom: 30px;
-    justify-content: space-between;
 }
 
 footer .nav {
@@ -143,81 +134,6 @@ footer .nav .external a, footer .nav .external router-link {
 footer .nav .external a:hover, footer .nav .external router-link:hover {
     color:#000;
 }
-
-footer section {
-    flex-grow: 1;
-}
-
-.row {
-    width:100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    position:relative;
-    z-index:100;
-    box-sizing: border-box;
-    height:100%;
-}
-
-main .row {
-    margin-bottom:30px;
-}
-
-.card .row {
-    padding: 0px;
-}
-
-.row.full {
-    max-width: 100% !important;
-    padding: 0px !important;
-}
-
-@media(min-width: 576px) {
-    .row {
-        max-width: 540px;
-    }
-}
-
-@media(min-width: 768px) {
-    .row {
-        max-width: 720px;
-    }
-}
-
-@media(min-width: 992px) {
-    .row {
-        max-width: 960px;
-    }
-}
-
-@media(min-width: 1200px) {
-    .row {
-        max-width:1140px;
-    }
-}
-
-
-.col-10 { flex: 0.1; }
-.col-15 { flex: 0.15; }
-.col-20 { flex: 0.2; }
-.col-25 { flex: 0.25; }
-.col-30 { flex: 0.3; }
-.col-35 { flex: 0.35; }
-.col-40 { flex: 0.4; }
-.col-45 { flex: 0.45; }
-.col-50 { flex: 0.5; }
-.col-55 { flex: 0.55; }
-.col-60 { flex: 0.6; }
-.col-65 { flex: 0.65; }
-.col-70 { flex: 0.7; }
-.col-75 { flex: 0.75; }
-.col-80 { flex: 0.8; }
-.col-85 { flex: 0.85; }
-.col-90 { flex: 0.9; }
-.col-95 { flex: 0.95; }
-.col-100 {width: 100%;}
 
 // Card
 .card {

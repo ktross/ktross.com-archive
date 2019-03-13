@@ -1,6 +1,12 @@
 <template>
-    <div class="row">
-        <h1>Project Page</h1>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1>Project Page</h1>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

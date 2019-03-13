@@ -3,6 +3,7 @@
  * Load dependencies
  */
 require('./bootstrap');
+import Vue from 'vue'
 import store from './store'
 import routes from './routes'
 import VueRouter from 'vue-router'
@@ -48,7 +49,6 @@ requireComponent.keys().forEach(fileName => {
 /**
  * Initialize Vue application
  */
-
 const app = new Vue({
     router,
     store: store

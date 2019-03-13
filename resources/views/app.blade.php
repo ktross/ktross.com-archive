@@ -12,58 +12,61 @@
     <body>
         <div id="app">
             <header>
-                <div class="row">
-                <nav class="brand">
-                    <router-link to="/">
-                        <strong>Kyle Ross</strong>
-                        <span>Full Stack Engineer</span>
-                    </router-link>
-                </nav>
-                <nav class="main">
-                    <router-link to="/">Home</router-link>
-                    <router-link to="/blog">Blog</router-link>
-                    <router-link to="/projects">Projects</router-link>
-                    <router-link to="/about">About</router-link>
-                    <router-link to="/contact">Contact</router-link>
-                </nav>
-                <nav class="external">
-                    <a rel="noreferrer noopener" target="_blank" href="https://github.com/ktross" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a rel="noreferrer noopener" target="_blank" href="https://gitlab.com/ktross" aria-label="GitLab"><i class="fab fa-gitlab"></i></a>
-                    <a rel="noreferrer noopener" target="_blank" href="https://stackoverflow.com/users/158816/ktross" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
-                    <a rel="noreferrer noopener" target="_blank" href="https://stackexchange.com/users/53133/ktross" aria-label="Stack Exchange"><i class="fab fa-stack-exchange"></i></a>
-                    <a rel="noreferrer noopener" target="_blank" href="https://www.facebook.com/kyle.t.ross" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/kyleross/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </nav>
-            </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <nav class="brand col-sm py-4">
+                            <router-link to="/">
+                                <app-logo light width="140"></app-logo>
+                            </router-link>
+                        </nav>
+                        <nav class="main col-sm py-4">
+                            <router-link to="/">Home</router-link>
+                            <router-link to="/blog">Blog</router-link>
+                            <router-link to="/projects">Projects</router-link>
+                            <router-link to="/about">About</router-link>
+                            <router-link to="/contact">Contact</router-link>
+                        </nav>
+                        <nav class="external col-sm py-4">
+                            <a rel="noreferrer noopener" target="_blank" href="https://github.com/ktross" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a rel="noreferrer noopener" target="_blank" href="https://gitlab.com/ktross" aria-label="GitLab"><i class="fab fa-gitlab"></i></a>
+                            <a rel="noreferrer noopener" target="_blank" href="https://stackoverflow.com/users/158816/ktross" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                            <a rel="noreferrer noopener" target="_blank" href="https://stackexchange.com/users/53133/ktross" aria-label="Stack Exchange"><i class="fab fa-stack-exchange"></i></a>
+                            <a rel="noreferrer noopener" target="_blank" href="https://www.facebook.com/kyle.t.ross" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/kyleross/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </nav>
+                    </div>
+                </div>
             </header>
-            <main>
+            <main class="p-5">
                 <router-view></router-view>
             </main>
             <footer>
-                <div class="row">
-                <section class="copyright">
-                    &copy;2008&ndash;{{ today()->format('Y') }} Kyle Ross
-                </section>
-                <section class="nav">
-                    <div class="external">
-                        <a rel="noreferrer noopener" target="_blank" href="https://github.com/ktross" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a rel="noreferrer noopener" target="_blank" href="https://gitlab.com/ktross" aria-label="GitLab"><i class="fab fa-gitlab"></i></a>
-                        <a rel="noreferrer noopener" target="_blank" href="https://stackoverflow.com/users/158816/ktross" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
-                        <a rel="noreferrer noopener" target="_blank" href="https://stackexchange.com/users/53133/ktross" aria-label="Stack Exchange"><i class="fab fa-stack-exchange"></i></a>
-                        <a rel="noreferrer noopener" target="_blank" href="https://www.facebook.com/kyle.t.ross" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/kyleross/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <div class="container">
+                    <div class="row align-items-end">
+                        <section class="copyright col-sm py-4">
+                            &copy;2008&ndash;{{ today()->format('Y') }} Kyle Ross
+                        </section>
+                        <section class="nav col-sm py-4">
+                            <div class="external">
+                                <a rel="noreferrer noopener" target="_blank" href="https://github.com/ktross" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a rel="noreferrer noopener" target="_blank" href="https://gitlab.com/ktross" aria-label="GitLab"><i class="fab fa-gitlab"></i></a>
+                                <a rel="noreferrer noopener" target="_blank" href="https://stackoverflow.com/users/158816/ktross" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                                <a rel="noreferrer noopener" target="_blank" href="https://stackexchange.com/users/53133/ktross" aria-label="Stack Exchange"><i class="fab fa-stack-exchange"></i></a>
+                                <a rel="noreferrer noopener" target="_blank" href="https://www.facebook.com/kyle.t.ross" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/kyleross/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="internal">
+                                <router-link to="/">Home</router-link>
+                                <router-link to="/blog">Blog</router-link>
+                                <router-link to="/projects">Projects</router-link>
+                                <router-link to="/about">About</router-link>
+                                <router-link to="/contact">Contact</router-link>
+                            </div>
+                        </section>
                     </div>
-                    <div class="internal">
-                        <router-link to="/">Home</router-link>
-                        <router-link to="/blog">Blog</router-link>
-                        <router-link to="/projects">Projects</router-link>
-                        <router-link to="/about">About</router-link>
-                        <router-link to="/contact">Contact</router-link>
-                    </div>
-                </section>
-            </div>
+                </div>
             </footer>
         </div>
-    <script type="application/javascript" src="{{ asset('js/app.js') }}"></script>
+        <script type="application/javascript" src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
