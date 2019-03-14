@@ -1,0 +1,14 @@
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all .15s ease;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}

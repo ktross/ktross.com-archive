@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </header>
-            <main class="p-5">
+            <main>
                 <router-view></router-view>
             </main>
             <footer>

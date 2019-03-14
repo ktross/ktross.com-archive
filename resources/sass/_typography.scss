@@ -1,0 +1,97 @@
+:root {
+    font-family: $font-family;
+    font-size: $base-font-size;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-top: $base-line-height;
+    margin-bottom: $base-line-height;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: $base-line-height;
+    margin-bottom: $base-line-height;
+}
+
+h3, .h3 {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    margin-top: $base-line-height;
+    margin-bottom: 0;
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: $base-line-height;
+    margin-bottom: 0;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: $base-line-height;
+    margin-bottom: 0;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: $base-line-height;
+    margin-bottom: 0;
+}
+
+p, ul, ol, pre, table, blockquote {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: $base-line-height;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  
+hr, .hr {
+    border: 1px solid;
+    margin: -1px 0;
+}
+
+a, b, i, strong, em, small, code {
+    line-height: 0;
+}
+
+sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+.to-upper {
+    text-transform: uppercase;
+}
+
+// Typography
+p.large {
+    font-size: 1.5rem;
+    line-height: 36px;
+    font-weight: 300;
+    color: #424770;
+}
