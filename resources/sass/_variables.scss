@@ -7,3 +7,16 @@ $font-family: "Open Sans";
 $base-font-size: 18px;
 $base-line-height: 1.5rem;
 
+// Colors
+$primary:       #E74530;
+$secondary:     #217A8F;
+$success:       #42BB62;
+$info:          #61A8B9;
+$warning:       #FAA858;
+$danger:        #C22612;
+$light:         #efefef;
+$dark:          #333333;
+
+@function contrast-color($color) {
+    @return if(lightness($color) > 60, $dark, $light)
+}

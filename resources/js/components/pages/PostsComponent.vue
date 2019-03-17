@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <h1>Blog Page</h1>
-                <article v-for="post in posts">
+                <h1>Latest <span>blog</span> posts</h1>
+                <article v-for="post in posts" :key="post.id">
                     <h2><router-link :to="'/posts/' + post.slug">{{ post.title }}</router-link></h2>
                     <div class="meta">{{ post.created_at }}</div>
                     <div class="content">{{ post.content }}</div>

@@ -2,4 +2,8 @@
     &-left { text-align: left; }
     &-center { text-align: center; }
     &-right { text-align: right; }
+    &-upper { text-transform: uppercase; }
+    &-lower { text-transform: lowercase; }
 }
+
+.circle { border-radius: 50%; }

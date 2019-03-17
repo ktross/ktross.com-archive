@@ -20,9 +20,6 @@
 // Browser
 @import 'browser';
 
-// Buttons
-@import 'buttons';
-
 // Forms
 @import 'forms';
 
@@ -34,4 +31,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 #app { overflow-x: hidden; }
+
+.row img {
+    max-width: 100%;
+}
