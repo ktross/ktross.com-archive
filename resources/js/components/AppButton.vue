@@ -61,6 +61,7 @@ a.btn, button.btn {
         color: contrast-color($dark);
     }
     &[disabled] {
+        cursor: not-allowed;
         pointer-events: none;
         background: $light;
         color: contrast-color($light);

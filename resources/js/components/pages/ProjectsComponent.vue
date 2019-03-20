@@ -11,7 +11,7 @@
             </div>
             <div class="col-5">
                 <h2 class="text-upper">TWI Ladder</h2>
-                <p>Placeholder</p>
+                <p>This project was a video gaming tournament and ladder website created from scratch for <a href="https://www.tripwireinteractive.com" target="blank">Tripwire Interactive</a>. The ladder portion included an ELO-based rating system and the ability to challenge other teams. The tournament portion included both double and single elimination brackets with visualizations. It was written in PHP/CodeIgniter and Javascript.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="http://www.twiladder.com" skin="secondary" type="anchor" icon="external-link-alt" target="_blank">Website</app-button>
@@ -33,7 +33,7 @@
             </div>
             <div class="col-6 text-right">
                 <h2 class="text-upper">HorseMount</h2>
-                <p>Placeholder</p>
+                <p>HorseMount is a flexible player mount system for Minecraft. It allows players to summon and dismiss horse mounts with a simple command. Players can also choose to set their default mount via command or sign from 140 different mount types.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="https://dev.bukkit.org/projects/horsemount" skin="secondary" type="anchor" icon="external-link-alt" target="_blank">Bukkit</app-button>
@@ -43,26 +43,12 @@
             </div>
         </div>
         <div class="project row my-5 align-items-center">
-            <div class="col-5">
-                <h2 class="text-upper">Youngstown Phantoms</h2>
-                <p>Placeholder</p>
-                <div class="row">
-                    <div class="col">
-                        <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank">Website</app-button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <web-browser title="placeholder" image="/img/thumb_youngstown-phantoms.jpg"></web-browser>
-            </div>
-        </div>
-        <div class="project row my-5 align-items-center">
             <div class="col-7">
                 <web-browser title="placeholder" image="/img/thumb_sppstore.jpg"></web-browser>
             </div>
             <div class="col-5">
                 <h2 class="text-upper">SPP Store</h2>
-                <p>Placeholder</p>
+                <p>SPP Store was an online marketplace I created to sell <a href="https://en.wikipedia.org/wiki/SuperPoke!" target="_blank">SuperPoke! Pets</a> items more efficiently. It was built with PrestaShop and PHP. I also built chrome extensions to automate most of the order delivery process on the SPP site. The success of this project prompted Slide, Inc. and Google to reach out to me to develop an official authorized reseller program.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="https://www.sppstore.com" skin="secondary" type="anchor" icon="external-link-alt" target="_blank">Website</app-button>
@@ -105,6 +91,7 @@
                 <div class="row">
                     <div class="col">
                         <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank" disabled>Website</app-button>
+                        <app-button to="http://web.archive.org/web/20111202000023/http://sppaddict.com/" skin="secondary" type="anchor" icon="external-link-alt" target="_blank">Archive</app-button>
                     </div>
                 </div>
             </div>
@@ -141,45 +128,19 @@
             </div>
         </div>
         <div class="project row my-5 align-items-center">
-            <div class="col-7">
-                <web-browser title="placeholder" image="/img/thumb_shadows-fall.jpg"></web-browser>
+            <div class="col-6">
+                <web-browser title="Youngstown Phantoms (Official)" image="/img/thumb_youngstown-phantoms.jpg"></web-browser>
             </div>
-            <div class="col-5">
-                <h2 class="text-upper">Shadows Fall Official</h2>
-                <p>Placeholder</p>
-                <div class="row">
-                    <div class="col">
-                        <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank" disabled>Website</app-button>
-                    </div>
-                </div>
+            <div class="col-6">
+                <web-browser title="Shadows Fall (Official)" image="/img/thumb_shadows-fall.jpg"></web-browser>
             </div>
         </div>
         <div class="project row my-5 align-items-center">
-            <div class="col-5">
-                <h2 class="text-upper">For Today Official</h2>
-                <p>Placeholder</p>
-                <div class="row">
-                    <div class="col">
-                        <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank" disabled>Website</app-button>
-                    </div>
-                </div>
+            <div class="col-6">
+                <web-browser title="For Today (Official)" image="/img/thumb_for-today.jpg"></web-browser>
             </div>
-            <div class="col-7">
-                <web-browser title="placeholder" image="/img/thumb_for-today.jpg"></web-browser>
-            </div>
-        </div>
-        <div class="project row my-5 align-items-center">
-            <div class="col-7">
-                <web-browser title="placeholder" image="/img/thumb_vali.jpg"></web-browser>
-            </div>
-            <div class="col-5">
-                <h2 class="text-upper">Vali Official</h2>
-                <p>Placeholder</p>
-                <div class="row">
-                    <div class="col">
-                        <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank" disabled>Website</app-button>
-                    </div>
-                </div>
+            <div class="col-6">
+                <web-browser title="Vali (Official)" image="/img/thumb_vali.jpg"></web-browser>
             </div>
         </div>
     </div>

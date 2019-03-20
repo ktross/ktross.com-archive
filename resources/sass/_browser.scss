@@ -57,7 +57,7 @@
 
 .browser .toolbar .tabs .search {
     background: #fff;
-    color: #999;
+    color: #333;
     width: 100%;
     height: 29px;
     line-height: 29px;
@@ -74,7 +74,7 @@
 .browser .main {
     width: 100%;
     max-width: 100%;
-    height: 400px;
+    max-height: 400px;
     overflow: hidden;
     /* background-image: url("/images/youngstown_full.png");*/
     background-size: 900px auto;

@@ -1,5 +1,4 @@
 import HomeComponent from './components/pages/HomeComponent.vue'
-import AboutComponent from './components/pages/AboutComponent.vue'
 import PostsComponent from './components/pages/PostsComponent.vue'
 import PostComponent from './components/pages/PostComponent.vue'
 import ProjectsComponent from './components/pages/ProjectsComponent.vue'
@@ -12,6 +11,5 @@ export default [
     { path: '/blog/:slug', component: PostComponent },
     { path: '/projects', component: ProjectsComponent },
     { path: '/projects/:slug', component: ProjectComponent },
-    { path: '/about', component: AboutComponent },
     { path: '/contact', component: ContactComponent }
 ]
