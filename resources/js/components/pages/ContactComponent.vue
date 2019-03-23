@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="container">
-            <div class="row">
-                <div class="col-8">
+            <div class="row align-items-center">
+                <div class="col-md-8 py-5">
                     <div class="card">
                         <h1>Get in touch</h1>
                         <p class="large">This is some placeholder text</p>
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 px-5" style="padding-top:80px;">
+                <div class="col-md-4 px-5">
                     <h1>Or...</h1>
                     <h3>Send an Email</h3>
                     <p>placeholder</p>

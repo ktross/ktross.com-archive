@@ -2,15 +2,15 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-sm">
+                <div class="col">
                     <h1>Hey, I'm <span>Kyle Ross</span> &ndash; Senior Full Stack Engineer</h1>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-7">
+                <div class="col-md-7">
                     <p>Placeholder</p>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <img src="https://www.gravatar.com/avatar/06dc1b682401533a5bb43ae48cf045e5?s=600" alt="Kyle Ross" class="circle">
                 </div>
             </div>
