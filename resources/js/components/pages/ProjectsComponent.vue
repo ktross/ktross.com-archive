@@ -22,7 +22,7 @@
         <div class="project row my-5 align-items-center">
             <div class="col-6 text-left">
                 <h2 class="text-upper">ktross.com</h2>
-                <p>Placeholder</p>
+                <p>This is the website you are currently on. It was built with PHP/Laravel and Vue/Vuex/Vue-Router. It is constantly being worked on and improved. Please feel free to browse the source and the Storybook page.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="https://www.ktross.com" skin="secondary" type="anchor" icon="external-link-alt" target="_blank">Website</app-button>
@@ -59,7 +59,7 @@
         <div class="project row my-5 align-items-center">
             <div class="col-5">
                 <h2 class="text-upper">SPPDB</h2>
-                <p>Placeholder</p>
+                <p>SPPDB was a searchable/browsable item database for SuperPoke! Pets that I created with PHP, MySQL, and Sphinx. It was designed for speed and accuracy from the start. Users could search every SPP item (over 10,000) by tags, names, categories, aliases, etc and be shown results in just a few milliseconds. It was faster than almost any static site I have seen. It became very popular and was probably the most linked domain on the SPP forums, not counting SPP Store.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank" disabled>Website</app-button>
@@ -87,7 +87,7 @@
         <div class="project row my-5 align-items-center">
             <div class="col-5">
                 <h2 class="text-upper">SPP Addict</h2>
-                <p>Placeholder</p>
+                <p>SPP Addict started out as a WordPress blog. I acquired it to drive more traffic to SPP Store. I improved the design, removed all third-party advertising and replaced them with ads for SPP Store. Eventually, Google reached out and contracted me to turn it into a social networking site and maintain it for 2 years after SuperPoke! Pets was shut down in order for the users to be able to keep in touch with their friends and minimize backlash.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank" disabled>Website</app-button>
@@ -105,7 +105,7 @@
             </div>
             <div class="col-5">
                 <h2 class="text-upper">Zynex Sales Portal</h2>
-                <p>Placeholder</p>
+                <p>Zynex Sales Portal is a completely custom CRM built for Zynex Medical. It allows sales reps to track their leads, orders, inventory, and commissions (with leaderboards). Managers have the ability to view all of this data for their entire team as well as generate reports.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="#" skin="secondary" type="anchor" icon="external-link-alt" target="_blank" disabled>Website</app-button>
@@ -116,7 +116,7 @@
         <div class="project row my-5 align-items-center">
             <div class="col-5">
                 <h2 class="text-upper">Zynex Medical</h2>
-                <p>Placeholder</p>
+                <p>Zynex Medical is a medical device manufacturer that provides electrotherapy devices for use in pain management, physical rehabilitation, neurological diagnosis and cardiac monitoring. This website is built with WordPress and PHP.</p>
                 <div class="row">
                     <div class="col">
                         <app-button to="https://www.zynex.com" skin="secondary" type="anchor" icon="external-link-alt" target="_blank">Website</app-button>
@@ -125,6 +125,12 @@
             </div>
             <div class="col-7">
                 <web-browser title="placeholder" image="/img/thumb_zynex.jpg"></web-browser>
+            </div>
+        </div>
+        <div class="prject row my-5 align-items-center">
+            <div class="col">
+                <h2 class="text-upper">WordPress Projects</h2>
+                <p>The projects below are all built on WordPress. They are all custom themes, and some include custom plugins or integrations with other existing plugins. There are no links currently, because these sites are updated with new designs constantly. I may put up archives in the future.</p>
             </div>
         </div>
         <div class="project row my-5 align-items-center">
