@@ -1,7 +1,10 @@
 <template>
-    <a :href="to" :class="getButtonClass" :target="target" :disabled="disabled">
+    <a v-if="type == 'anchor'" :href="to" :class="getButtonClass" v-bind="$attrs">
         <i v-if="icon !== false" :class="getIconClass"></i> <slot></slot>
     </a>
+    <button v-else :type="type" :class="getButtonClass" v-bind="$attrs">
+        <i v-if="icon !== false" :class="getIconClass"></i> <slot></slot>
+    </button>
 </template>
 
 <style lang="scss">
@@ -113,15 +116,6 @@ export default {
             }
         },
         icon: {
-            type: String,
-            required: false
-        },
-        disabled: {
-            type: Boolean,
-            required: false,
-            default: false
-        },
-        target: {
             type: String,
             required: false
         }

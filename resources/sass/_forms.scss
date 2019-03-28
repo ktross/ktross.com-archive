@@ -5,6 +5,7 @@ input, textarea {
     border-radius: 8px;
     padding: 10px;
     transition: all .15s ease;
+    margin-bottom: $base-line-height;
 }
 
 input:focus, input:hover, textarea:focus, textarea:hover {
