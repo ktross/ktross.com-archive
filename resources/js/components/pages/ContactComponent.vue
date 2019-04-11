@@ -8,33 +8,38 @@
                         <p class="large">This is some placeholder text</p>
                         <form v-on:submit.prevent="submitForm">
                         <div class="row">
-                            <div class="col">
-                                <input type="text" name="name" placeholder="Your Name" v-model="formData.name" required>
+                            <div v-if="Object.keys(errors).length > 0" class="col">
+                                <ul class="unstyled">
+                                    <li v-bind:key="key" v-for="(value, key) in errors" class="error">Error: {{ value[0] }}</li>
+                                </ul>
+                            </div>
+                            <div v-if="this.success === true" class="col">
+                                <p class="success">Your message has been sent.</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="text" name="company_name" placeholder="Company Name" v-model="formData.company_name" required>
+                                <input type="text" name="name" placeholder="Your Name" v-model="formData.name" required :disabled="disabled">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="text" name="email" placeholder="Email" v-model="formData.email" required>
+                                <input type="text" name="company_name" placeholder="Company Name" v-model="formData.company_name" :disabled="disabled">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="text" name="phone" placeholder="Phone" v-model="formData.phone" required>
+                                <input type="text" name="email" placeholder="Email" v-model="formData.email" :disabled="disabled">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <textarea name="message" placeholder="Your Message" v-model="formData.message" required></textarea>
+                                <textarea name="message" placeholder="Your Message" v-model="formData.message" :disabled="disabled"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <app-button skin="primary" type="submit" @click="submitForm">Send Message</app-button>
+                                <app-button skin="primary" type="submit" @click="submitForm" :disabled="disabled">Send Message</app-button>
                             </div>
                         </div>
                         </form>
@@ -54,25 +59,32 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
-        },
         data: function () {
             return {
                 formData: {
                     name: null,
                     company_name: null,
                     email: null,
-                    phone: null,
                     message: null
-                }
+                },
+                disabled: false,
+                success: false,
+                errors: {}
             }
         },
         methods: {
             submitForm: function() {
-                this.axios.post('contact', this.formData).then((response) => {
-                    // handle errors / success
-                })
+                this.disabled = true
+                this.errors = {}
+                this.axios.post('contact', this.formData)
+                    .then((response) => {
+                        this.success = true
+                    })
+                    .catch((error) => {
+                        this.disabled = false
+                        this.errors = (error.response.status == '422') ? error.response.data.errors : {unknown: ['An unknown error has occurred.']}
+                        console.log(this.errors)
+                    })
             }
         }
     }

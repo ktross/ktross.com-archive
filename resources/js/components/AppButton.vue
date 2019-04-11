@@ -19,6 +19,7 @@ a.btn, button.btn {
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     background: #fff;
     border-radius: 4px;
+    border: 0;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .025em;
