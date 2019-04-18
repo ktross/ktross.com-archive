@@ -6,6 +6,7 @@ use App\Contact;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Validator;
+use Mail;
 
 class ContactController extends Controller
 {
@@ -24,8 +25,10 @@ class ContactController extends Controller
             'message' => 'required'
         ]);
 
+        // Store message in DB
         $contact = Contact::create($request->all());
 
-        // Send Email
+        // Send email
+        $mail = Mail::send(new ContactMail($contact));
     }
 }
