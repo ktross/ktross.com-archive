@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center">Check out some of my favorite <span>projects</span></h1>
+                <h1 class="text-center">Check out some of my favorite projects</h1>
             </div>
         </div>
         <div class="project row my-5 align-items-center">
