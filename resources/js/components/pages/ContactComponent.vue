@@ -48,9 +48,9 @@
                 <div class="col-md-4 px-5">
                     <h1>Or...</h1>
                     <h3>Send an Email</h3>
-                    <p>placeholder</p>
-                    <h3>Make a Call</h3>
-                    <p>placeholder</p>
+                    <p><a :href="'mailto:'+contact.email">{{ contact.email }}</a></p>
+                    <h3>Leave a Voicemail</h3>
+                    <p><a :href="'tel:'+contact.phone">{{ contact.phone }}</a></p>
                 </div>
             </div>
         </div>
@@ -61,6 +61,10 @@
     export default {
         data: function () {
             return {
+                contact: {
+                    email: process.env.MIX_CONTACT_EMAIL,
+                    phone: process.env.MIX_CONTACT_PHONE
+                },
                 formData: {
                     name: null,
                     company_name: null,
