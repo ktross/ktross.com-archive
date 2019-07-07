@@ -16,7 +16,7 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div class="main" style="background-color:#eee;"><img :src="image" :alt="title"></div>
+        <div class="main" style="background-color:#eee;"><Lightbox :src="image" :full="image" /></div>
     </div>
 </template>
 
