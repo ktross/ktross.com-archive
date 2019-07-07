@@ -72,7 +72,7 @@
         </div>
         <div class="project row my-5 align-items-center">
             <div class="col-md-7">
-                <app-video url="https://player.vimeo.com/video/19721197"></app-video>
+                <app-video url="https://player.vimeo.com/video/19721197?dnt=1"></app-video>
             </div>
             <div class="col-md-5">
                 <h2 class="text-upper">SPP Mail</h2>
